@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Pentagrama</string>
+    <string name="texto_titulo">Titulo de la App</string>
+    <string name="texto_boton">Click</string>
 </resources>
