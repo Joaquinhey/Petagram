@@ -2,4 +2,6 @@
     <string name="app_name">Pentagrama</string>
     <string name="texto_titulo">Titulo de la App</string>
     <string name="texto_boton">Click</string>
+    <string name="mensaje">mensaje toast</string>
+    <string name="texto_accion">accion</string>
 </resources>
