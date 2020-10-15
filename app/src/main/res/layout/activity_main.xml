@@ -4,24 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
+
         <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
             android:id="@+id/sfiMiIndicadorRefresh"
-            android:layout_height="match_parent"
+            android:layout_height="200dp"
             android:layout_width="match_parent">
             <ListView
                 android:id="@+id/lstMiLista"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
+                android:layout_height="200dp">
             </ListView>
         </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
         <TextView
             android:id="@+id/tvTitulo"
             android:layout_width="wrap_content"
@@ -43,5 +44,43 @@
             android:layout_below="@id/btnMiboton"
             android:id="@+id/fabMiFAB"
             />
+        <androidx.cardview.widget.CardView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/fabMiFAB"
+            card_view:cardCornerRadius="4dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/imgImagen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/escudo"
+                    android:scaleType="centerCrop"
+                    />
+
+                <TextView
+                    android:id="@+id/tvTituloTarjeta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="titulo de la tarjeta"
+                    android:layout_below="@id/imgImagen"
+                    />
+                <TextView
+                    android:id="@+id/tvDescTarjeta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="descrpcion de la tarjeta de la tarjeta"
+                    android:layout_below="@id/tvTituloTarjeta"
+                    />
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
     </RelativeLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
