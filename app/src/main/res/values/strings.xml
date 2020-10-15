@@ -4,4 +4,12 @@
     <string name="texto_boton">Click</string>
     <string name="mensaje">mensaje toast</string>
     <string name="texto_accion">accion</string>
+    <string-array name = "planetas">
+        <item>Mercurio</item>
+        <item>Venus</item>
+        <item>Marte</item>
+        <item>Jupiter</item>
+        <item>Saturno</item>
+        <item>Neptuno</item>
+    </string-array>
 </resources>
